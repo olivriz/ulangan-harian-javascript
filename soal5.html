@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 5</title>
+    <style>
+      body {
+        background-color: white;
+        transition: background-color 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="kalimat" onclick="ubahKalimat()">Saya merasa belum bisa belajar JavaScript</p>
+
+    <script>
+      function ubahKalimat() {
+        var kalimatElement = document.getElementById("kalimat");
+        kalimatElement.innerHTML = "Ternyata saya masih kurang berlatih belajar JavaScript.";
+        document.body.style.backgroundColor = "green";
+      }
+    </script>
+  </body>
+</html>
